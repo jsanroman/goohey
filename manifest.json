@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "GooHey",
+  "version": "0.1.0",
+  "description": "Accept the cookie message of Google automatically and add a shortcut to set search input focus",
+
+  "content_scripts": [{
+    "matches": ["https://*.google.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }]
+}
